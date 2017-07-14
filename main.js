@@ -1,4 +1,4 @@
-var fetch = require('node-fetch');
+const fetch = require('node-fetch');
 
 const TOKEN = '{Slack_API_token}';
 const CHANNEL_ID = '{Channel_ID}';
