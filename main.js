@@ -9,7 +9,7 @@ function fetchChannel() {
     .then(res => res.json())
     .then((res) => {
       if (!res.ok) throw new Error(res.error);
-      return res.channel.members;
+      return res.channel;
     });
 }
 
@@ -25,8 +25,10 @@ function fetchMember(ids) {
   .then(users => users.filter(x => !x.deleted));
 }
 
-fetchChannel()
-  .then(ids => fetchMember(ids))
-  .then(users => users.map(x => x.real_name).sort())
-  .then(names => console.log(names))
+(async () => {
+  const channel = await fetchChannel();
+  const members = await fetchMember(channel.members);
+  const names = members.map(x => x.real_name).sort();
+  console.log(names);
+})()
   .catch(err => console.error(err));
