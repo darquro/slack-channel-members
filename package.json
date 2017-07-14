@@ -1,0 +1,23 @@
+{
+  "name": "slack-channel-members",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "darquro",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^1.7.1"
+  },
+  "devDependencies": {},
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darquro/slack-channel-members.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darquro/slack-channel-members/issues"
+  },
+  "homepage": "https://github.com/darquro/slack-channel-members#readme"
+}
