@@ -13,7 +13,7 @@ function fetchChannel() {
     });
 }
 
-function fetchMember(ids) {
+function fetchMembers(ids) {
   return Promise.all(ids.map((id) => {
     return fetch(`${SLACK_API_BASE}/users.info?token=${TOKEN}&user=${id}&pretty=1`)
       .then(res => res.json())
@@ -27,7 +27,7 @@ function fetchMember(ids) {
 
 (async () => {
   const channel = await fetchChannel();
-  const members = await fetchMember(channel.members);
+  const members = await fetchMembers(channel.members);
   const names = members.map(x => x.real_name).sort();
   console.log(names);
 })()
