@@ -13,8 +13,8 @@ $ npm install
 Set Slack API token([Slack API Legacy tokens](https://api.slack.com/custom-integrations/legacy-tokens)) and channel ID into main.js.
 
 ```js
-const TOKEN = '{Slack Token}}';
-const CHANNEL_ID = '{Channel ID}';
+const TOKEN = '{Slack_API_token}';
+const CHANNEL_ID = '{Channel_ID}';
 ```
 
 Execute node command in current directory
