@@ -21,8 +21,10 @@ Execute node command in current directory
 
 ```sh
 $ node .
-[ 'James Hetfield',
-  'Lars Ulrich',
-  'Kirk Hammett',
-  'Robert Trujillo' ]
+✄-------------------------------------
+James Hetfield
+Lars Ulrich
+Kirk Hammett
+Robert Trujillo
+✄-------------------------------------
 ```
