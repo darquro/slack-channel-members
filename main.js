@@ -29,6 +29,10 @@ function fetchMembers(ids) {
   const channel = await fetchChannel();
   const members = await fetchMembers(channel.members);
   const names = members.map(x => x.real_name).sort();
-  console.log(names);
+  process.stdout.write('✄-------------------------------------\n');
+  names.forEach((name) => {
+    process.stdout.write(`${name}\n`);
+  });
+  process.stdout.write('✄-------------------------------------\n');
 })()
   .catch(err => console.error(err));
