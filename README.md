@@ -2,6 +2,10 @@
 
 Get member names in slack channel.
 
+## Requirements
+
+Node.js v8 or later
+
 ## Usage
 
 Install package.
